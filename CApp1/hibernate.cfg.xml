@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory>
+    <property name="dialect">
+      NHibernate.Dialect.MsSql2012Dialect, NHibernate
+    </property>
+    <!--<property name="connection.connection_string">
+      Server=.\; Database=NHCookbook;
+      Trusted_Connection=SSPI
+    </property>-->
+    <property name="connection.connection_string_name">
+      Default
+    </property>
+    <property name="adonet.batch_size">
+      100
+    </property>
+    <!--<property name="show_sql">
+      true
+    </property>-->
+  </session-factory>
+</hibernate-configuration>
